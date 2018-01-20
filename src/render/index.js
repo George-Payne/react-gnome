@@ -10,6 +10,7 @@ function render(element: *) {
     // $FlowFixMe
     container.onStartup(() => {
         GnomeRenderer.updateContainer(element, node, null);
+
         // $FlowFixMe
         container.document.render();
     });

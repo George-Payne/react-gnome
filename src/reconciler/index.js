@@ -116,4 +116,11 @@ const GnomeRenderer = Reconciler({
     },
 });
 
+GnomeRenderer.injectIntoDevTools({
+    bundleType: 1, // 0 for PROD, 1 for DEV
+    version: '0.1.0',
+    rendererPackageName: 'react-gnome', // package name
+    findHostInstanceByFiber: GnomeRenderer.findHostInstance // host instance (root)
+});
+
 export default GnomeRenderer;

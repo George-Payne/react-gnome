@@ -1,6 +1,7 @@
 // @flow
 
-import 'utils/compat.js';
+import 'utils/compat';
+import 'utils/devTools';
 
 import render from 'render';
 
